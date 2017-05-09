@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY ui /usr/src/app
 
 # override settings via localsettings.py
-COPY docker/ui/settings.py /usr/src/app/localsettings.py
+COPY settings.py /usr/src/app/localsettings.py
 
 # copy testing script into container
 # Unknown tests yet
